@@ -1,0 +1,11 @@
+{
+    "name": "igroc/test-praim-group",
+    "require": {
+        "twig/twig": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "engine\\": "engine/"
+        }
+    }
+}
