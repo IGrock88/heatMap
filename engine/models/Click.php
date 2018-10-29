@@ -53,13 +53,13 @@ class Click extends AbstractModel
 
     private function incrementClick(Point $point)
     {
-        $newQuantity = $point->getQuantity() + 1;
+        $newQuantity = $point->getQuantityClick() + 1;
         $this->db->getRows('update click set quantity = ? where id = ?', [$newQuantity, $point->getId()]);
 
     }
 
     private function insertClick(Point $point)
     {
-        $this->db->getRows('insert into click (coord_x, coord_y, quantity) values (?, ?, ?)', [$point->getCoordX(), $point->getCoordY(), $point->getQuantity()]);
+        $this->db->getRows('insert into click (coord_x, coord_y, quantity) values (?, ?, ?)', [$point->getCoordX(), $point->getCoordY(), $point->getQuantityClick()]);
     }
 }

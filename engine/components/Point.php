@@ -9,7 +9,7 @@ class Point
     private $id;
     private $coordX;
     private $coordY;
-    private $quantity;
+    private $quantityClick;
 
     /**
      * Point constructor.
@@ -17,11 +17,11 @@ class Point
      * @param int $coordY
      * @param int $quantity
      */
-    public function __construct(int $coordX, int $coordY, int $quantity = 1)
+    public function __construct(int $coordX, int $coordY, int $quantityClick = 1)
     {
         $this->coordX = $coordX;
         $this->coordY = $coordY;
-        $this->quantity = $quantity;
+        $this->quantityClick = $quantityClick;
     }
 
     /**
@@ -59,18 +59,20 @@ class Point
     /**
      * @return int
      */
-    public function getQuantity(): int
+    public function getQuantityClick(): int
     {
-        return $this->quantity;
+        return $this->quantityClick;
     }
 
     /**
-     * @param int $quantity
+     * @param int $quantityClick
      */
-    public function setQuantity(int $quantity)
+    public function setQuantityClick(int $quantityClick)
     {
-        $this->quantity = $quantity;
+        $this->quantityClick = $quantityClick;
     }
+
+
 
 
 
