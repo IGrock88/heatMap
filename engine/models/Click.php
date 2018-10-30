@@ -43,7 +43,7 @@ class Click extends AbstractModel
 
         if (count($click) > 0){
             $point->setId($click[0]['id']);
-            $point->setQuantity($click[0]['quantity']);
+            $point->setQuantityClick($click[0]['quantity']);
             return $point;
         }
         else{

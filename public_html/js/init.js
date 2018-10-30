@@ -10,8 +10,8 @@ window.onload = function () {
     // обработчик на клик мыши, в нем получаем координаты мыши при клике
     document.addEventListener('click', function (event) {
         var point = {
-            coordX: event.clientX,
-            coordY: event.clientY
+            coordX: event.pageX,
+            coordY: event.pageY
         };
 
         heatMap.sendCoords(point);
