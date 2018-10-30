@@ -20,6 +20,7 @@ canvas{
   position: relative;
   z-index: 20;
   cursor: pointer;
+  color: red;
 }
 
 body {
